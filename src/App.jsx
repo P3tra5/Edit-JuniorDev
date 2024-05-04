@@ -14,7 +14,6 @@ function App() {
   const [udruge, postaviUdruge] = useState([]);
   const [gradovi, postaviGradove] = useState([]);
   const [poslovi, postaviPoslove] = useState([]);
-  //const [filtrirano, postaviFiltrirano] = useState(false);
 
   useEffect(() => {
     axios
@@ -46,7 +45,7 @@ function App() {
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/aktivnosti' element={<Aktivnosti aktivnosti={aktivnosti} gradovi={gradovi} />} />
-        <Route path='/volonteri' element={<Volonteri volonteri={volonteri} gradovi={gradovi} poslovi={poslovi} />} />
+        <Route path='/volonteri' element={<Volonteri volonteri={volonteri} postaviVolontere={postaviVolontere} gradovi={gradovi} poslovi={poslovi} />} />
         <Route path='/udruge' element={<Udruge udruge={udruge} gradovi={gradovi} />} />
       </Routes>
     </>

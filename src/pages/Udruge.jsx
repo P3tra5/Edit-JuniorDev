@@ -73,29 +73,29 @@ function Udruge({ udruge, gradovi }) {
             {close => (
                 <div className='modal'>
                     <form onSubmit={saljiPodatke}>
-                    <label>
-                        Ime:
-                        <input type='text' name='ime' value={formaPodaci.ime} onChange={promjenaUlaza} required />
-                    </label>
-                    <label>
-                        Adresa:
-                        <input type='text' name='adresa' value={formaPodaci.adresa} onChange={promjenaUlaza} required />
-                    </label>
-                    <label>
-                        Grad:
-                        <select name='grad' value={formaPodaci.grad} onChange={promjenaUlaza} required >
-                            <option value=''>--Odaberi grad--</option>
-                                {gradovi.map(v => (
-                                    <option key={v.id} value={v.grad}>
-                                        {v.grad}
-                                    </option>
-                                ))}
-                        </select>
-                    </label>
-                    <div>
-                        <button type="submit">Dodaj</button>
-                        <button onClick={() => close()}>Odustani</button>
-                    </div>
+                        <label>
+                            Ime:
+                            <input type='text' name='ime' value={formaPodaci.ime} onChange={promjenaUlaza} required />
+                        </label>
+                        <label>
+                            Adresa:
+                            <input type='text' name='adresa' value={formaPodaci.adresa} onChange={promjenaUlaza} required />
+                        </label>
+                        <label>
+                            Grad:
+                            <select name='grad' value={formaPodaci.grad} onChange={promjenaUlaza} required >
+                                <option value=''>--Odaberi grad--</option>
+                                    {gradovi.map(v => (
+                                        <option key={v.id} value={v.grad}>
+                                            {v.grad}
+                                        </option>
+                                    ))}
+                            </select>
+                        </label>
+                        <div>
+                            <button type="submit">Dodaj</button>
+                            <button onClick={() => close()}>Odustani</button>
+                        </div>
                     </form>
                 </div>
             )}
