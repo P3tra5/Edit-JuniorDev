@@ -1,0 +1,206 @@
+{
+  "aktivnosti": [
+    {
+      "id": "aktivnost_1",
+      "ime": "Aktivnost 1",
+      "datum": "01.01.2025",
+      "datum_dodano": "01.01.2024",
+      "udruga": "Udruga 1",
+      "grad": "Split",
+      "lokacija": "Marjan",
+      "sudionici": [
+        {
+          "id": "sud1",
+          "ime": "Ivana",
+          "prezime": "Ivić"
+        },
+        {
+          "id": "sud2",
+          "ime": "Mate",
+          "prezime": "Matić"
+        },
+        {
+          "id": "fda58461-ba26-4fa7-b693-348debdb882f",
+          "ime": "Dora",
+          "prezime": "S"
+        },
+        {
+          "id": "193c44c7-3b04-4aff-b8ef-9b04938e14e1",
+          "ime": "Dora",
+          "prezime": "AA"
+        }
+      ],
+      "opis": "Kratki opis aktivnosti 1"
+    },
+    {
+      "id": "aktivnost_3",
+      "ime": "Bktivnost 1",
+      "datum": "23.01.2025",
+      "datum_dodano": "01.11.2024",
+      "udruga": "Udruga5",
+      "grad": "Split",
+      "lokacija": "Marjan",
+      "sudionici": [
+        {
+          "id": "sud1",
+          "ime": "Ivana",
+          "prezime": "Ivić"
+        },
+        {
+          "id": "sud2",
+          "ime": "Mate",
+          "prezime": "Matić"
+        }
+      ],
+      "opis": "Kratki opis aktivnosti 1"
+    },
+    {
+      "id": "aktivnost_2",
+      "ime": "Aktivnost 2",
+      "datum": "01.03.2025",
+      "datum_dodano": "03.01.2024",
+      "udruga": "Udruga3",
+      "grad": "Split",
+      "lokacija": "Marjan",
+      "sudionici": [
+        {
+          "id": "sud1",
+          "ime": "Ivana",
+          "prezime": "Ivić"
+        },
+        {
+          "id": "sud2",
+          "ime": "Mate",
+          "prezime": "Matić"
+        }
+      ],
+      "opis": "Kratki opis aktivnosti 2"
+    },
+    {
+      "id": "8b44",
+      "ime": "fefef",
+      "datum": "2024-04-30",
+      "datum_dodano": "04.05.2024",
+      "udruga": "sffffff",
+      "grad": "Zagreb",
+      "lokacija": "plaza",
+      "sudionici": [
+        {
+          "id": "sud1",
+          "ime": "Ivana",
+          "prezime": "Ivić"
+        },
+        {
+          "id": "sud2",
+          "ime": "Mate",
+          "prezime": "Matić"
+        },
+        {
+          "id": "50d7b65f-a968-4aa1-8d0f-9c8e7b1cfcf2",
+          "ime": "Ssdsd",
+          "prezime": "Brge"
+        }
+      ],
+      "opis": "sssssssssssssssssssssssss"
+    },
+    {
+      "id": "270c",
+      "ime": "Akrighr",
+      "datum": "2024-04-30",
+      "datum_dodano": "04.05.2024",
+      "udruga": "udrzga",
+      "grad": "Zagreb",
+      "lokacija": "plaza",
+      "sudionici": [
+        {
+          "id": "3a068255-ba2e-44bd-a175-9c6d00a152d2",
+          "ime": "AKHDwd",
+          "prezime": "WDgudh"
+        }
+      ],
+      "opis": "awjdwldj wjdlowjld wjodjw jwjdč wjdwčoj"
+    }
+  ],
+  "volonteri": [
+    {
+      "id": "volonter_1",
+      "ime": "Tom",
+      "prezime": "Smith",
+      "grad": "Rijeka",
+      "vrsta_posla": "Čišćenje okoliša"
+    },
+    {
+      "id": "volonter_2",
+      "ime": "Jane",
+      "prezime": "May",
+      "grad": "Vukovar",
+      "vrsta_posla": "Rad u azilu"
+    }
+  ],
+  "udruge": [
+    {
+      "id": "udruga_1",
+      "ime": "Udruga 1",
+      "adresa": "Vukovarska 1",
+      "grad": "Split"
+    },
+    {
+      "id": "0d1f",
+      "ime": "UdrzgaDca",
+      "adresa": "ulica",
+      "grad": "Omiš"
+    },
+    {
+      "id": "5539",
+      "ime": "udrga3",
+      "adresa": "ulica13",
+      "grad": "Rijeka"
+    },
+    {
+      "id": "4f22",
+      "ime": "grrg",
+      "adresa": "ssss",
+      "grad": "Zagreb"
+    },
+    {
+      "id": "4d20",
+      "ime": "adada",
+      "adresa": "ddddddd",
+      "grad": "Zagreb"
+    },
+    {
+      "id": "9cfe",
+      "ime": "bvjhvbhj",
+      "adresa": "uli45",
+      "grad": "Rijeka"
+    }
+  ],
+  "gradovi": [
+    {
+      "id": "split",
+      "grad": "Split"
+    },
+    {
+      "id": "zagreb",
+      "grad": "Zagreb"
+    },
+    {
+      "id": "rijeka",
+      "grad": "Rijeka"
+    }
+  ],
+  "vrste_posla": [
+    {
+      "id": "vp_1",
+      "posao": "Čišćenje okoliša"
+    },
+    {
+      "id": "vp_2",
+      "posao": "Rad u azilu"
+    },
+    {
+      "id": "vp_3",
+      "posao": "Popravak"
+    }
+  ]
+}
