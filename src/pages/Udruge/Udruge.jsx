@@ -1,10 +1,10 @@
 import { useState, useContext } from "react";
 import axios from "axios";
-import AdminContext from "../components/kontekst";
+import AdminContext from "../../components/common/kontekst";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import PopisUdruga from "../components/PopisUdruga"
-import ZahtjeviZaUdrugu from "../components/ZahtjeviZaUdrugu";
+import PopisUdruga from "./PopisUdruga"
+import ZahtjeviZaUdrugu from "./ZahtjeviZaUdrugu";
 
 function Udruge({ udruge, gradovi }) {
     const { admin } = useContext(AdminContext);
@@ -35,9 +35,9 @@ function Udruge({ udruge, gradovi }) {
         const zaSlanje = obradiPodatke(formaPodaci)
   
         axios
-            .post('http://localhost:3001/udruge', zaSlanje)
+            .post('http://localhost:3001/zahtjev_udruge', zaSlanje)
             .then(rez => {
-                dodaj(stanje => [...stanje, rez.data])
+                alert("Zahtjev je poslan administratoru i bit će dodan u popis nakon odobrenja.");
             })
             .catch(err => console.log(err.message));
     };

@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
-import AktivnostCard from "../components/AktivnostCard"
+import AktivnostCard from "./AktivnostCard"
 
 function Aktivnosti({ aktivnosti, gradovi }) {
     const sortedAktivnosti = aktivnosti.slice().sort((a, b) => {

@@ -1,12 +1,12 @@
 import { Routes, Route } from 'react-router-dom'
 import { useState, useEffect, useMemo } from 'react'
 import axios from "axios"
-import AdminContext from './components/kontekst'
-import Navbar from './components/Navbar'
+import AdminContext from './components/common/kontekst'
+import Navbar from './components/common/Navbar'
 import Home from './pages/Home'
-import Aktivnosti from './pages/Aktivnosti'
-import Volonteri from './pages/Volonteri'
-import Udruge from './pages/Udruge'
+import Aktivnosti from './pages/Aktivnosti/Aktivnosti'
+import Volonteri from './pages/Volonteri/Volonteri'
+import Udruge from './pages/Udruge/Udruge'
 import './App.css'
 
 function App() {

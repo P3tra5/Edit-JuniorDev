@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import FiltriranjeVolontera from "../components/FiltriranjeVolontera"
-import PopisVolontera from "../components/PopisVolontera"
+import FiltriranjeVolontera from "./FiltriranjeVolontera"
+import PopisVolontera from "./PopisVolontera"
 
 function Volonteri({ gradovi, poslovi }) {
     const [volonteri, postaviVolontere] = useState([]);

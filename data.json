@@ -183,38 +183,70 @@
     },
     {
       "id": "0d1f",
-      "ime": "UdrzgaDca",
+      "ime": "Udruga 2",
       "adresa": "ulica",
       "grad": "Omiš"
     },
     {
       "id": "5539",
-      "ime": "udrga3",
+      "ime": "Udruga 3",
       "adresa": "ulica13",
       "grad": "Rijeka"
     },
     {
       "id": "4f22",
-      "ime": "grrg",
+      "ime": "Udruga 4",
       "adresa": "ssss",
       "grad": "Zagreb"
     },
     {
       "id": "4d20",
-      "ime": "adada",
+      "ime": "Udruga 5",
       "adresa": "ddddddd",
       "grad": "Zagreb"
     },
     {
       "id": "9cfe",
-      "ime": "bvjhvbhj",
+      "ime": "Udruga 6",
       "adresa": "uli45",
       "grad": "Rijeka"
     },
     {
+      "id": "066b",
+      "ime": "Udruga 7",
+      "adresa": "Adreda23",
+      "grad": "Split"
+    },
+    {
       "id": "d0e2",
-      "ime": "novaUd",
+      "ime": "Udruga 8",
       "adresa": "ulica agrg 23",
+      "grad": "Zagreb"
+    },
+    {
+      "id": "56c0",
+      "ime": "Udruga 10",
+      "adresa": "Adreda23",
+      "grad": "Split"
+    },
+    {
+      "id": "7ba8",
+      "ime": "Udruga 12",
+      "adresa": "dsd2",
+      "grad": "Split"
+    }
+  ],
+  "zahtjev_udruge": [
+    {
+      "id": "udruga_6",
+      "ime": "Udruga 9",
+      "adresa": "Vukovarska 6",
+      "grad": "Split"
+    },
+    {
+      "id": "1f92",
+      "ime": "Udruga 13",
+      "adresa": "adawd 32",
       "grad": "Zagreb"
     }
   ],
