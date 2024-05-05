@@ -42,11 +42,11 @@
   ],
   "volonteri": [
     {
-      "id": "volonter_1",
-      "ime": "Tom",
-      "prezime": "Smith",
-      "grad": "Rijeka",
-      "vrsta_posla": "vp_1"
+      "ime": "Tommy",
+      "prezime": "Smithy",
+      "grad": "Split",
+      "vrsta_posla": "vp_1",
+      "id": "volonter_1"
     },
     {
       "id": "volonter_2",

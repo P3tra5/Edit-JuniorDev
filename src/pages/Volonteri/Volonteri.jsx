@@ -65,7 +65,7 @@ function Volonteri({ gradovi, poslovi }) {
                 postaviFiltriraneVolontere={postaviFiltriraneVolontere}
             />
             {filtriraniVolonteri.map((volonter) => (
-                <PopisVolontera key={volonter.id} rez={volonter} postaviVolontere={postaviVolontere} />
+                <PopisVolontera key={volonter.id} rez={volonter} postaviVolontere={postaviVolontere} updateAll={postaviVolontere} />
             ))}
             {admin === 'on' && (
                 <>
