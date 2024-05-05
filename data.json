@@ -45,7 +45,7 @@
       "ime": "Tommy",
       "prezime": "Smithy",
       "grad": "Split",
-      "vrsta_posla": "vp_1",
+      "vrsta_posla": "Čišćenje okoliša",
       "id": "volonter_1"
     },
     {
@@ -53,21 +53,28 @@
       "ime": "Mary",
       "prezime": "May",
       "grad": "Rijeka",
-      "vrsta_posla": "vp_2"
+      "vrsta_posla": "Rad u azilu"
     },
     {
       "id": "volonter_3",
       "ime": "Jane",
       "prezime": "May",
       "grad": "Split",
-      "vrsta_posla": "vp_1"
+      "vrsta_posla": "Čišćenje okoliša"
     },
     {
       "id": "volonter_4",
       "ime": "John",
       "prezime": "May",
       "grad": "Vukovar",
-      "vrsta_posla": "vp_2"
+      "vrsta_posla": "Rad u azilu"
+    },
+    {
+      "id": "5074",
+      "ime": "Ana",
+      "prezime": "Anić",
+      "grad": "Zagreb",
+      "vrsta_posla": "Popravak"
     }
   ],
   "udruge": [
