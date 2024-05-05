@@ -1,10 +1,12 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import axios from "axios";
+import AdminContext from "../../components/common/kontekst";
 import { v4 as uuidv4 } from 'uuid';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 
-function AktivnostCard({ rez }) {
+function AktivnostCard({ rez, postaviAktivnosti }) {
+    const { admin } = useContext(AdminContext);
     const [noviSudionik, postaviNovogSudionika] = useState({ ime: "", prezime: "" });
 
     const saljiPodatke = event => {
@@ -30,9 +32,35 @@ function AktivnostCard({ rez }) {
         }
     };
 
+    async function brisiPodatak() {
+        const shouldRemove = confirm("Jeste li sigurni da želite obrisati podatak?")
+    
+        if (shouldRemove) {
+          await axios.delete(`http://localhost:3001/aktivnosti/${rez.id}`);
+          const rezultat = await axios.get("http://localhost:3001/aktivnosti");
+          postaviAktivnosti(rezultat.data);
+        }
+      }
+
     return (
         <>
-            <Popup trigger={<p><button>{rez.ime} {rez.datum}</button></p>} modal nested>
+            {/*<Popup trigger={<button>{rez.ime} {rez.datum}</button>} modal nested>
+            <p>
+                {admin === 'on' && (
+                    <>
+                        <button onClick={brisiPodatak}>DEL</button>
+                    </>
+                )}
+            </p>*/}
+                
+            <Popup trigger={<p>
+                                <button>{rez.ime} {rez.datum}</button>
+                                {admin === 'on' && (
+                                    <>
+                                        <button onClick={brisiPodatak}>DEL</button>
+                                    </>
+                                )}
+                            </p>} modal nested>
                 {close => (
                     <div className='modal'>
                         <p>Opis: {rez.opis}</p>
@@ -42,7 +70,7 @@ function AktivnostCard({ rez }) {
                             Sudionici:&nbsp;
                             {rez.sudionici.map((sudionik, index) => (
                                 <span key={index}>
-                                    {sudionik.ime} {sudionik.prezime}{index !== rez.sudionici.length - 1 && ', '}
+                                    <p>{sudionik.ime} {sudionik.prezime}</p>
                                 </span>
                             ))}
                         </div>

@@ -43,7 +43,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
-          <Route path='/aktivnosti' element={<Aktivnosti aktivnosti={aktivnosti} gradovi={gradovi} />} />
+          <Route path='/aktivnosti' element={<Aktivnosti aktivnosti={aktivnosti} postaviAktivnosti={postaviAktivnosti} gradovi={gradovi} />} />
           <Route path='/volonteri' element={<Volonteri gradovi={gradovi} poslovi={poslovi} />} />
           <Route path='/udruge' element={<Udruge udruge={udruge} gradovi={gradovi} />} />
         </Routes>

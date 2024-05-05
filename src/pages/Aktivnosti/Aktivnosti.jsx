@@ -4,7 +4,7 @@ import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import AktivnostCard from "./AktivnostCard"
 
-function Aktivnosti({ aktivnosti, gradovi }) {
+function Aktivnosti({ aktivnosti, postaviAktivnosti, gradovi }) {
     const sortedAktivnosti = aktivnosti.slice().sort((a, b) => {
         return new Date(b.datum_dodano) - new Date(a.datum_dodano);
     });
@@ -64,7 +64,7 @@ function Aktivnosti({ aktivnosti, gradovi }) {
       <>
         <p>Aktivnosti</p>
         {sortedAktivnosti.map(r => (
-            <AktivnostCard key={r.id} rez={r} />
+            <AktivnostCard key={r.id} rez={r} postaviAktivnosti={postaviAktivnosti} />
         ))}
         <Popup trigger={<button>Nova</button>} modal nested>
             {close => (

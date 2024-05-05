@@ -33,28 +33,6 @@
       "opis": "Kratki opis aktivnosti 1"
     },
     {
-      "id": "aktivnost_3",
-      "ime": "Bktivnost 1",
-      "datum": "23.01.2025",
-      "datum_dodano": "01.11.2024",
-      "udruga": "Udruga5",
-      "grad": "Split",
-      "lokacija": "Marjan",
-      "sudionici": [
-        {
-          "id": "sud1",
-          "ime": "Ivana",
-          "prezime": "Ivić"
-        },
-        {
-          "id": "sud2",
-          "ime": "Mate",
-          "prezime": "Matić"
-        }
-      ],
-      "opis": "Kratki opis aktivnosti 1"
-    },
-    {
       "id": "aktivnost_2",
       "ime": "Aktivnost 2",
       "datum": "01.03.2025",
@@ -75,66 +53,6 @@
         }
       ],
       "opis": "Kratki opis aktivnosti 2"
-    },
-    {
-      "id": "8b44",
-      "ime": "fefef",
-      "datum": "2024-04-30",
-      "datum_dodano": "04.05.2024",
-      "udruga": "sffffff",
-      "grad": "Zagreb",
-      "lokacija": "plaza",
-      "sudionici": [
-        {
-          "id": "sud1",
-          "ime": "Ivana",
-          "prezime": "Ivić"
-        },
-        {
-          "id": "sud2",
-          "ime": "Mate",
-          "prezime": "Matić"
-        },
-        {
-          "id": "50d7b65f-a968-4aa1-8d0f-9c8e7b1cfcf2",
-          "ime": "Ssdsd",
-          "prezime": "Brge"
-        },
-        {
-          "id": "8eef56ac-20f0-4fb9-8aa6-0cb445996d8b",
-          "ime": "Adnhi",
-          "prezime": "Sad"
-        }
-      ],
-      "opis": "sssssssssssssssssssssssss"
-    },
-    {
-      "id": "270c",
-      "ime": "Akrighr",
-      "datum": "2024-04-30",
-      "datum_dodano": "04.05.2024",
-      "udruga": "udrzga",
-      "grad": "Zagreb",
-      "lokacija": "plaza",
-      "sudionici": [
-        {
-          "id": "3a068255-ba2e-44bd-a175-9c6d00a152d2",
-          "ime": "AKHDwd",
-          "prezime": "WDgudh"
-        }
-      ],
-      "opis": "awjdwldj wjdlowjld wjodjw jwjdč wjdwčoj"
-    },
-    {
-      "id": "add8",
-      "ime": "adsdsds",
-      "datum": "2024-05-31",
-      "datum_dodano": "04.05.2024",
-      "udruga": "sdsds",
-      "grad": "Zagreb",
-      "lokacija": "plaza",
-      "sudionici": [],
-      "opis": "sdsdsssssssssssssssssss"
     }
   ],
   "volonteri": [
@@ -143,35 +61,28 @@
       "ime": "Tom",
       "prezime": "Smith",
       "grad": "Rijeka",
-      "vrsta_posla": "Čišćenje okoliša"
+      "vrsta_posla": "vp_1"
     },
     {
       "id": "volonter_2",
       "ime": "Mary",
       "prezime": "May",
       "grad": "Rijeka",
-      "vrsta_posla": "Rad u azilu"
+      "vrsta_posla": "vp_2"
     },
     {
       "id": "volonter_3",
       "ime": "Jane",
       "prezime": "May",
       "grad": "Split",
-      "vrsta_posla": "Čišćenje okoliša"
+      "vrsta_posla": "vp_1"
     },
     {
       "id": "volonter_4",
       "ime": "John",
       "prezime": "May",
       "grad": "Vukovar",
-      "vrsta_posla": "Rad u azilu"
-    },
-    {
-      "id": "volonter_5",
-      "ime": "Anne",
-      "prezime": "May",
-      "grad": "Vukovar",
-      "vrsta_posla": "Rad u azilu"
+      "vrsta_posla": "vp_2"
     }
   ],
   "udruge": [
@@ -267,15 +178,15 @@
   "vrste_posla": [
     {
       "id": "vp_1",
-      "posao": "Čišćenje okoliša"
+      "vrsta_posla": "Čišćenje okoliša"
     },
     {
       "id": "vp_2",
-      "posao": "Rad u azilu"
+      "vrsta_posla": "Rad u azilu"
     },
     {
       "id": "vp_3",
-      "posao": "Popravak"
+      "vrsta_posla": "Popravak"
     }
   ]
 }
