@@ -1,10 +1,13 @@
-import { useState } from "react";
+import { useState, useContext } from "react";
 import axios from "axios";
+import AdminContext from "../components/kontekst";
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
 import PopisUdruga from "../components/PopisUdruga"
+import ZahtjeviZaUdrugu from "../components/ZahtjeviZaUdrugu";
 
 function Udruge({ udruge, gradovi }) {
+    const { admin } = useContext(AdminContext);
     const [sortOption, setSortOption] = useState('ime');
     const [formaPodaci, postaviUdrugu] = useState({
         ime: "",
@@ -100,6 +103,11 @@ function Udruge({ udruge, gradovi }) {
                 </div>
             )}
         </Popup>
+        {admin === 'on' && (
+            <>
+                <ZahtjeviZaUdrugu />  
+            </>
+        )}
       </>
     )
   }

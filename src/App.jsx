@@ -1,5 +1,5 @@
 import { Routes, Route } from 'react-router-dom'
-import { useState, useEffect } from 'react'
+import { useState, useEffect, useMemo } from 'react'
 import axios from "axios"
 import AdminContext from './components/kontekst'
 import Navbar from './components/Navbar'
@@ -10,6 +10,8 @@ import Udruge from './pages/Udruge'
 import './App.css'
 
 function App() {
+  const [admin, setAdmin] = useState(false);
+  const adminValue = useMemo(() => ({admin, setAdmin}), [admin, setAdmin]);
   const [aktivnosti, postaviAktivnosti] = useState([]);
   const [udruge, postaviUdruge] = useState([]);
   const [gradovi, postaviGradove] = useState([]);
@@ -37,7 +39,7 @@ function App() {
 
   return (
     <>
-      <AdminContext.Provider value='off'>
+      <AdminContext.Provider value={adminValue}>
         <Navbar />
         <Routes>
           <Route path='/' element={<Home />} />
