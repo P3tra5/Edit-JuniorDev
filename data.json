@@ -18,16 +18,6 @@
           "id": "sud2",
           "ime": "Mate",
           "prezime": "Matić"
-        },
-        {
-          "id": "fda58461-ba26-4fa7-b693-348debdb882f",
-          "ime": "Dora",
-          "prezime": "S"
-        },
-        {
-          "id": "193c44c7-3b04-4aff-b8ef-9b04938e14e1",
-          "ime": "Dora",
-          "prezime": "AA"
         }
       ],
       "opis": "Kratki opis aktivnosti 1"
@@ -45,11 +35,6 @@
           "id": "sud1",
           "ime": "Ivana",
           "prezime": "Ivić"
-        },
-        {
-          "id": "sud2",
-          "ime": "Mate",
-          "prezime": "Matić"
         }
       ],
       "opis": "Kratki opis aktivnosti 2"

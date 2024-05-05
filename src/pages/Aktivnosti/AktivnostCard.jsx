@@ -4,6 +4,7 @@ import AdminContext from "../../components/common/kontekst";
 import { v4 as uuidv4 } from 'uuid';
 import Popup from 'reactjs-popup';
 import 'reactjs-popup/dist/index.css';
+import BrisanjePrijave from "./BrisanjePrijave";
 
 function AktivnostCard({ rez, postaviAktivnosti }) {
     const { admin } = useContext(AdminContext);
@@ -44,15 +45,6 @@ function AktivnostCard({ rez, postaviAktivnosti }) {
 
     return (
         <>
-            {/*<Popup trigger={<button>{rez.ime} {rez.datum}</button>} modal nested>
-            <p>
-                {admin === 'on' && (
-                    <>
-                        <button onClick={brisiPodatak}>DEL</button>
-                    </>
-                )}
-            </p>*/}
-                
             <Popup trigger={<p>
                                 <button>{rez.ime} {rez.datum}</button>
                                 {admin === 'on' && (
@@ -70,7 +62,14 @@ function AktivnostCard({ rez, postaviAktivnosti }) {
                             Sudionici:&nbsp;
                             {rez.sudionici.map((sudionik, index) => (
                                 <span key={index}>
-                                    <p>{sudionik.ime} {sudionik.prezime}</p>
+                                    <p>
+                                        {sudionik.ime} {sudionik.prezime}
+                                        {admin === 'on' && (
+                                            <>
+                                                <BrisanjePrijave aktivnost={rez} postaviAktivnosti={postaviAktivnosti} sudionikId={sudionik.id} />
+                                            </>
+                                        )}
+                                    </p>
                                 </span>
                             ))}
                         </div>

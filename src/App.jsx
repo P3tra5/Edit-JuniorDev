@@ -7,6 +7,7 @@ import Home from './pages/Home'
 import Aktivnosti from './pages/Aktivnosti/Aktivnosti'
 import Volonteri from './pages/Volonteri/Volonteri'
 import Udruge from './pages/Udruge/Udruge'
+//import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css'
 
 function App() {
